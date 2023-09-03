@@ -118,9 +118,10 @@
 // npm init -y (everything default)
 // npm i pacakge_name  to way to download the packages
 
-const _ =require('lodash');
-const items =[1,[2,[3,[4]]]]
-const newItems=_.flattenDeep(items)                        //resolve the nested array into simple array
-console.log(newItems);
-console.log("hello Akash i am ");
-console.log("like ");
+// const _ =require('lodash');
+// const items =[1,[2,[3,[4]]]]
+// const newItems=_.flattenDeep(items)                        //resolve the nested array into simple array
+// console.log(newItems);
+// console.log("hello Akash i am ");
+// console.log("like ");
+
