@@ -33,3 +33,4 @@ sayhi("Rohan");
 sayhi(names.Akash); // we can ge by object names by like
 // sayhi("ram"); 
 sayhi(names.jhon); 
+sayhi(names.jignesh);
