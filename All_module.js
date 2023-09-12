@@ -1,5 +1,8 @@
 // Operating system module
 
+// const { readFile, write, writeFile } = require("fs");
+// const { flatMap } = require("lodash");
+
 // const { readFile, write } = require("fs")
 
 // const { Module } = require("module")
@@ -125,3 +128,70 @@
 // console.log("hello Akash i am ");
 // console.log("like ");
 
+// Asyn patterns
+
+// const http =require('http');
+// const server = http.createServer((req,res)=>{
+//     if(req.url=='/'){
+//         res.end('home page')
+//     }
+//     if(req.url=='/about'){
+//         //Blocking Code
+//         for(let i=0;i<1000;i++){
+//             for(let j=0;j<1000;j++){
+
+//                 console.log(`${i} ${j}`);
+//             }
+//         }
+//         res.end('About page')
+//     }
+//     res.end('Erroe  page')
+
+// })
+
+// server.listen(5000,()=>{
+//     console.log("Serever is listening at 50000 .....")
+// })
+
+// through Async patterns set up the Promises
+
+
+// const {readFile,writeFile}=require('fs').promises
+// const util=require('util')
+// const readFilePromise=util.promisify(readFile)
+// const writeFilePromise=util.promisify(writeFile)
+
+// const start =async()=>{
+//     try{
+        
+//         const first =await readFile('./content/first.txt','utf8')
+//         const second=await readFile('./content/second.txt','utf8')
+//         await writeFile('./content/result9.text',`This is Awesome :${first} \n ${second}`,{flag:'a'})
+//         console.log(first,second)
+//     }
+//     catch(error){
+//         console.log(error)
+//         // console.log(first)
+//     }
+    
+// }
+// start();
+// const {readFile}=require('fs');
+// const getText= (path)=>{
+//     return new Promise((resolve,reject)=>{
+
+//         readFile(path,'utf8',(err,data)=>{
+//             if(err){
+//                 reject(err);
+//             }
+//             else{
+//                 // console.log(data)
+//                 resolve(data)
+//             }
+//         })
+//     })
+//     }
+    // getText('./content/first.txt');
+    // // Now the Error Handeling
+    // .then((result)=>console.log(result))
+    // .catch((err)=>console.log(err))
