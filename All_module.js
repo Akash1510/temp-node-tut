@@ -157,9 +157,9 @@
 
 
 // const {readFile,writeFile}=require('fs').promises
-// const util=require('util')
-// const readFilePromise=util.promisify(readFile)
-// const writeFilePromise=util.promisify(writeFile)
+// // const util=require('util')
+// // const readFilePromise=util.promisify(readFile)
+// // const writeFilePromise=util.promisify(writeFile)
 
 // const start =async()=>{
 //     try{
@@ -191,7 +191,7 @@
 //         })
 //     })
 //     }
-    // getText('./content/first.txt');
-    // // Now the Error Handeling
+//     getText('./content/first.txt');
+    // Now the Error Handeling
     // .then((result)=>console.log(result))
     // .catch((err)=>console.log(err))
