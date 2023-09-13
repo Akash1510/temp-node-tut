@@ -1,7 +1,7 @@
 {
   "name": "mern_stack",
   "version": "1.0.0",
-  "main": "Express.js",
+  "main": ".",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
