@@ -3,9 +3,13 @@ const Student=require("../models/student");
 
 const router =new express.Router;
 
+
+
 router.get("/student",(req,res)=>{
     res.send("hello guys now in router ");
 })
+
+
 
 
 router.get("/student/about",(req,res)=>{
@@ -24,6 +28,8 @@ router.post("/student/about/final" ,(req,res)=>{
     })
 });
 
+
+
 router.post("/student",async(req,res)=>{
     try{
         const user = Student (req.body)
@@ -34,6 +40,9 @@ router.post("/student",async(req,res)=>{
         res.status(400).send(e);
     }
 });
+
+
+
 router.get("/student/about/final",async(req,res)=>{
     try{
       const studentdata=await  Student.find();
@@ -58,6 +67,8 @@ router.patch("/student/:id",async(req,res)=>{
       res.status(400).send(e);
     }
   });
+
+
 
   router.delete("/student/:id",async(req,res)=>{
         try{
